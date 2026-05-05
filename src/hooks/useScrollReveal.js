@@ -1,0 +1,30 @@
+import { useEffect, useRef, useState } from 'react';
+
+/**
+ * Custom hook to animate elements when they enter the viewport.
+ * Returns a ref to attach to the target element and a boolean indicating visibility.
+ */
+export function useScrollReveal(threshold = 0.15) {
+  const ref = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(element);
+        }
+      },
+      { threshold }
+    );
+
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, [threshold]);
+
+  return [ref, isVisible];
+}
