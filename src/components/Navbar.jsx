@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, FileDown } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const navItems = [
@@ -8,7 +8,6 @@ const navItems = [
   { label: 'Sobre Mí', href: '/sobre', targetId: 'sobre' },
   { label: 'Cursos', href: '/cursos', targetId: 'cursos' },
   { label: 'Blog', href: '/blog', targetId: 'blog' },
-  { label: 'Contacto', href: '/contacto', targetId: 'contacto' },
 ];
 
 const Navbar = () => {
@@ -26,7 +25,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    const sectionIds = ['inicio', 'proyectos', 'blog', 'contacto'];
+    const sectionIds = ['inicio', 'proyectos', 'blog'];
     const observers = [];
 
     sectionIds.forEach((id) => {
@@ -55,7 +54,6 @@ const Navbar = () => {
     if (href === '/proyectos') return location.pathname === '/proyectos';
     if (href === '/blog') return location.pathname === '/blog' || location.pathname.startsWith('/blog/');
     if (href === '/cursos') return location.pathname === '/cursos';
-    if (href === '/contacto') return location.pathname === '/contacto';
     if (href === '/sobre') return location.pathname === '/sobre';
     if (isHome) return activeSection === targetId;
     return location.hash === `#${targetId}`;
@@ -83,7 +81,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8 ml-auto mr-8">
+          <div className="hidden md:flex items-center gap-6 ml-auto">
             {navItems.map((item) => (
               <Link
                 key={item.label}
@@ -97,9 +95,19 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
+
+            {/* Botón Descargar CV */}
+            <a
+              href="/CV_Bryan_Salirrosas.pdf"
+              download="CV_Bryan_Salirrosas.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-bold text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 rounded-xl shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-300 border border-cyan-400/30 group"
+            >
+              <FileDown className="w-4 h-4 group-hover:scale-110 transition-transform text-cyan-200" />
+              <span>Descargar CV</span>
+            </a>
           </div>
-
-
 
           {/* Mobile Menu Button */}
           <button
@@ -115,16 +123,16 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full glass transition-all duration-400 overflow-hidden ${mobileOpen ? 'max-h-80 border-b border-gray-700/50' : 'max-h-0'
+        className={`md:hidden absolute top-full left-0 w-full glass transition-all duration-400 overflow-hidden ${mobileOpen ? 'max-h-96 border-b border-gray-700/50' : 'max-h-0'
           }`}
       >
-        <div className="px-4 py-4 flex flex-col gap-1">
+        <div className="px-4 py-4 flex flex-col gap-1.5">
           {navItems.map((item, index) => (
             <Link
               key={item.href}
               to={item.href}
               onClick={handleNavClick}
-              className={`block px-4 py-3.5 rounded-xl text-sm font-semibold tracking-wide transition-all duration-200 ${getActiveState(item.href, item.targetId)
+              className={`block px-4 py-3 rounded-xl text-sm font-semibold tracking-wide transition-all duration-200 ${getActiveState(item.href, item.targetId)
                   ? 'bg-gradient-to-r from-cyan-500/10 to-emerald-500/5 text-cyan-400 border border-cyan-500/20'
                   : 'text-gray-400 hover:text-white hover:bg-white/5'
                 }`}
@@ -134,6 +142,19 @@ const Navbar = () => {
               {item.label}
             </Link>
           ))}
+
+          {/* Mobile CV Button */}
+          <a
+            href="/CV_Bryan_Salirrosas.pdf"
+            download="CV_Bryan_Salirrosas.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleNavClick}
+            className="flex items-center justify-center gap-2 mt-2 px-4 py-3 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-cyan-500 to-blue-600 shadow-lg shadow-cyan-500/20 border border-cyan-400/30"
+          >
+            <FileDown className="w-4 h-4 text-cyan-200" />
+            <span>Descargar CV (PDF)</span>
+          </a>
         </div>
       </div>
     </nav>

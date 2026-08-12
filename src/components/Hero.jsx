@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Shield, Code2, Cpu, Zap, Lock, Globe, ArrowRight } from 'lucide-react';
+import { Shield, Code2, Cpu, Zap, Lock, Globe, ArrowRight, FileDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const TYPING_TEXTS = [
@@ -146,6 +146,16 @@ const Hero = () => {
           <a href="https://wa.me/59157067635" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg group">
             Contactar por WhatsApp
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </a>
+          <a
+            href="/CV_Bryan_Salirrosas.pdf"
+            download="CV_Bryan_Salirrosas.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary text-lg group flex items-center justify-center gap-2 border-cyan-500/30 hover:border-cyan-400 text-cyan-300 hover:text-white"
+          >
+            <FileDown className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform" />
+            Descargar CV
           </a>
           <Link to="/proyectos" className="btn-secondary text-lg">
             Ver mi Portafolio
