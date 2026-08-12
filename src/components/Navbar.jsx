@@ -6,8 +6,6 @@ const navItems = [
   { label: 'Inicio', href: '/#inicio', targetId: 'inicio' },
   { label: 'Portafolio', href: '/proyectos', targetId: 'proyectos' },
   { label: 'Sobre Mí', href: '/sobre', targetId: 'sobre' },
-  { label: 'Cursos', href: '/cursos', targetId: 'cursos' },
-  { label: 'Blog', href: '/blog', targetId: 'blog' },
 ];
 
 const Navbar = () => {
