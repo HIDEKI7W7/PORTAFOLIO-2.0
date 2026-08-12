@@ -14,8 +14,8 @@ const projectsData = [
       '/burger_gallery_2.png'
     ],
     tech: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'E-Commerce'],
-    liveUrl: 'https://ornate-shortbread-b78b1d.netlify.app/',
-    githubUrl: '#'
+    liveUrl: 'https://burger-royall.vercel.app/',
+    githubUrl: 'https://github.com/HIDEKI7W7/Burger-Royall'
   },
   {
     id: 5,
