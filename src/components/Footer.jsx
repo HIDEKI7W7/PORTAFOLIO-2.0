@@ -25,7 +25,7 @@ const Footer = () => {
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
               </svg>
             </a>
-            <a href="https://wa.me/59178680723" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-lg bg-transparent border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-gray-500 transition-all opacity-80 hover:opacity-100">
+            <a href="https://wa.me/59157067635" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-lg bg-transparent border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-gray-500 transition-all opacity-80 hover:opacity-100">
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
               </svg>

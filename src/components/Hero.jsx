@@ -143,7 +143,7 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="animate-fade-in-up animate-delay-500 flex flex-col sm:flex-row gap-4 justify-center relative z-20">
-          <a href="https://wa.me/59178680723" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg group">
+          <a href="https://wa.me/59157067635" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg group">
             Contactar por WhatsApp
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>

@@ -403,7 +403,7 @@ const BlogPost = () => {
             He capacitado e implementado soluciones que ayudan a los negocios locales a automatizar procesos y obtener más clientes.
           </p>
           <a 
-            href="https://wa.me/59178680723?text=Hola%20Bryan,%20le%C3%AD%20tu%20blog%20y%20me%20gustar%C3%ADa%20agendar%20una%20consultor%C3%ADa." 
+            href="https://wa.me/59157067635?text=Hola%20Bryan,%20le%C3%AD%20tu%20blog%20y%20me%20gustar%C3%ADa%20agendar%20una%20consultor%C3%ADa." 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block px-8 py-3.5 bg-[#3b82f6] hover:bg-[#2563eb] text-white font-bold rounded-xl transition-all shadow-[0_0_25px_rgba(59,130,246,0.25)] hover:shadow-[0_0_35px_rgba(59,130,246,0.45)] hover:-translate-y-1"

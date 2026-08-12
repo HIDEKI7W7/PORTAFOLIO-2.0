@@ -139,7 +139,7 @@ const ServiceDetail = () => {
                 Escríbeme para agendar una consultoría de 15 minutos sin costo. Evaluaremos tu negocio y te daré un presupuesto detallado.
               </p>
               <a 
-                href="https://wa.me/59178680723" 
+                href="https://wa.me/59157067635" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full block text-center py-3 px-6 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-lg shadow-lg shadow-emerald-500/20 transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer"

@@ -391,7 +391,7 @@ const Projects = () => {
                   </p>
                   
                   <a 
-                    href={`https://wa.me/59178680723?text=Hola,%20me%20interesa%20un%20proyecto%20similar%20a%20${encodeURIComponent(selectedProject.title)}.`}
+                    href={`https://wa.me/59157067635?text=Hola,%20me%20interesa%20un%20proyecto%20similar%20a%20${encodeURIComponent(selectedProject.title)}.`}
                     target="_blank" 
                     rel="noreferrer" 
                     className="flex flex-row items-center justify-center gap-2 w-full bg-white text-blue-700 font-black text-[13px] tracking-wide px-4 py-3.5 rounded-xl mb-3 hover:bg-gray-50 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-0.5"
@@ -401,7 +401,7 @@ const Projects = () => {
                   </a>
                   
                   <a 
-                    href={selectedProject.liveUrl !== '#' ? selectedProject.liveUrl : `https://wa.me/59178680723?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20el%20acceso%20a%20la%20demo%20en%20vivo%20de%20${encodeURIComponent(selectedProject.title)}.`}
+                    href={selectedProject.liveUrl !== '#' ? selectedProject.liveUrl : `https://wa.me/59157067635?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20el%20acceso%20a%20la%20demo%20en%20vivo%20de%20${encodeURIComponent(selectedProject.title)}.`}
                     target="_blank" 
                     rel="noreferrer" 
                     className="flex flex-row items-center justify-center gap-2 w-full bg-[#1e3a8a] text-white font-bold text-[13px] tracking-wide px-4 py-3.5 rounded-xl hover:bg-[#172554] transition-colors border border-[#1e40af]"

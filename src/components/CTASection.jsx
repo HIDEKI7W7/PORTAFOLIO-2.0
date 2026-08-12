@@ -47,7 +47,7 @@ const CTASection = () => {
           </p>
           
           <a
-            href="https://wa.me/59178680723"
+            href="https://wa.me/59157067635"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 px-8 py-4 md:px-10 md:py-5 bg-white text-blue-700 hover:text-blue-800 hover:bg-gray-50 font-black text-lg md:text-xl rounded-xl transition-all duration-300 shadow-[0_10_40px_rgba(255,255,255,0.2)] hover:shadow-[0_15_50px_rgba(255,255,255,0.4)] hover:-translate-y-1.5 group"

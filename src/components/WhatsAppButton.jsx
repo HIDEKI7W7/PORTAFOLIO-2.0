@@ -1,7 +1,7 @@
 const WhatsAppButton = () => {
   return (
     <a
-      href="https://wa.me/59178680723"
+      href="https://wa.me/59157067635"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-[100] group flex items-center justify-center p-2"
